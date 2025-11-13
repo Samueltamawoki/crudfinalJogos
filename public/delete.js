@@ -11,7 +11,7 @@
 function deletarDados() {
     var cpf = document.getElementById('identificadorCPF').value
 
-    fetch('http://localhost:3000/pessoas')
+    fetch('pessoas')
         .then(response => response.json())
         .then(data => {
             
@@ -28,3 +28,4 @@ function deletarDados() {
             }
         })
 }
+
