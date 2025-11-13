@@ -42,7 +42,7 @@ function enviarDados() {
     var senha = document.getElementById('senha').value
 
     //Enviar um função que puxa o valor de uma API - FETCH
-    fetch('http://localhost:3000/pessoas', {
+    fetch('https://localhost:3000/pessoas', {
         method: 'POST', //Metodo POST HTTP
         headers: {
             'Content-Type': 'application/json' //Tipo de conteudo enviado JSON
@@ -50,4 +50,5 @@ function enviarDados() {
         body: JSON.stringify({nome: nome, idade: idade, sobrenome: sobrenome, telefone: telefone, rua: rua, cidade: cidade, estado: estado, cep: cep, email: email, cpf: cpf, senha: senha}) //Dados a serem enviados e convertidos
     })
     .then(resposta => resposta.JSON) //Converte a resposta para JSON
+
 }
