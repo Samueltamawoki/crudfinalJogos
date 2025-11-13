@@ -17,7 +17,7 @@ function enviarDados() {
 
 
     //Enviar um função que puxa o valor de uma API - FETCH
-    fetch('http://localhost:3000/pessoas', {
+    fetch('pessoas', {
         method: 'POST', //Metodo POST HTTP
         headers: {
             'Content-Type': 'application/json' //Tipo de conteudo enviado JSON
@@ -25,4 +25,5 @@ function enviarDados() {
         body: JSON.stringify({nome: nome,sobrenome: sobrenome, idade: idade, rg: rg, cpf: cpf, rua: rua, numCasa : numCasa, cidade: cidade, bairo: bairo, estado: estado, email: email, telefone: telefone, senha: senha}) //Dados a serem enviados e convertidos
     })
     .then(resposta => resposta.JSON) //Converte a resposta para JSON
+
 }
