@@ -1,7 +1,7 @@
 function buscarDados() {
     var cpf = document.getElementById('identificadorCPF').value ////////
 
-    fetch('pessoas', {
+    fetch('pessoas/${id}', {
         method: 'GET'
     })
     .then(resposta => resposta.json())
@@ -47,4 +47,5 @@ function atualizarDados() {
     })
     .then(resposta => resposta.JSON) //Converte a resposta para JSON
 }
+
 
