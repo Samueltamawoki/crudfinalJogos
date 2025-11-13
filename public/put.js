@@ -1,7 +1,7 @@
 function buscarDados() {
     var cpf = document.getElementById('identificadorCPF').value ////////
 
-    fetch('pessoas/${id}', {
+    fetch('pessoas', {
         method: 'GET'
     })
     .then(resposta => resposta.json())
@@ -38,7 +38,7 @@ function atualizarDados() {
     var estado = document.getElementById('estadoAtualizar').value
     var telefone = document.getElementById('telefoneAtualizar').value
 
-    fetch(`http://localhost:3000/pessoas/${id}`, {
+    fetch(`pessoas/${id}`, {
         method: 'PUT', //Metodo POST HTTP
         headers: {
             'Content-Type': 'application/json' //Tipo de conteudo enviado JSON
@@ -47,5 +47,6 @@ function atualizarDados() {
     })
     .then(resposta => resposta.JSON) //Converte a resposta para JSON
 }
+
 
 
