@@ -1,4 +1,4 @@
-fetch('http://localhost:3000/pessoas')
+fetch('pessoas')
     .then(resposta => resposta.json())
     .then(dados => {
         // Selecionar a tabela tbody
@@ -46,4 +46,5 @@ fetch('http://localhost:3000/pessoas')
             tr.appendChild(tdTelefone)
             tabelaCorpo.appendChild(tr)
         })
+
     })
