@@ -16,7 +16,7 @@ const cepValido = (cep) => {
 //Com async e await podemos trabalhar com código assíncrono em um estilo mais parecido com o bom e velho código síncrono.
 const pesquisarCep = async () => {
     const cep = document.getElementById("cep").value;
-    const url = `http://viacep.com.br/ws/${cep}/json/`;
+    const url = `https://viacep.com.br/ws/${cep}/json/`;
     if (cepValido(cep)) {
         const db = await fetch(url);
         const endereco = await db.json();
@@ -52,3 +52,4 @@ function enviarDados() {
     .then(resposta => resposta.JSON) //Converte a resposta para JSON
 
 }
+
