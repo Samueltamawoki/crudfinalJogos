@@ -19,7 +19,7 @@ function deletarDados() {
 
             if (pessoa) {
                 
-                fetch(`http://localhost:3000/pessoas/${pessoa.id}`, {
+                fetch(`pessoas/${pessoa.id}`, {
                     method: 'DELETE'
                 })
                 .then(() => alert('Pessoa deletada com sucesso!'))
@@ -28,4 +28,5 @@ function deletarDados() {
             }
         })
 }
+
 
