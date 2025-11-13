@@ -1,0 +1,87 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #0d0d0d;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* === CABEÇALHO === */
+header {
+    background: #1a1a1a;
+    border-bottom: 2px solid #00bfff;
+    color: #00bfff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    font-weight: 600;
+    box-shadow: 0 0 15px #00bfff33;
+}
+
+header a {
+    color: #ccc;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: 0.2s;
+}
+
+header a:hover {
+    color: #00bfff;
+}
+
+/* === TÍTULO PRINCIPAL === */
+h1 {
+    text-align: center;
+    color: #00bfff;
+    margin-top: 40px;
+}
+
+/* === SEÇÃO DE JOGOS === */
+.jogos {
+    text-align: center;
+    margin: 40px auto;
+    max-width: 900px;
+    background: #1a1a1a;
+    border: 1px solid #00bfff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 15px #00bfff33;
+}
+
+.jogos h1 {
+    color: #00bfff;
+    margin-bottom: 10px;
+}
+
+.jogos hr {
+    border: 1px solid #00bfff44;
+    margin-bottom: 25px;
+}
+
+/* === IMAGENS DE JOGOS === */
+.jogos img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 10px;
+    transition: 0.3s;
+    border: 1px solid #00bfff33;
+}
+
+.jogos img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #00bfff;
+}
+
+/* === RODAPÉ === */
+footer {
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid #00bfff33;
+    color: #aaa;
+    background: #111;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
