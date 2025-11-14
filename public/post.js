@@ -22,3 +22,4 @@ function enviarDados() {
     })
     .then(resposta => resposta.JSON) //Converte a resposta para JSON
 }
+
